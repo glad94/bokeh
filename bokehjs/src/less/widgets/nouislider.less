@@ -29,9 +29,15 @@
 @handle_left: -@handle_width/2;
 @handle_top: -(@handle_height - @slider_size)/2 - 1;
 
+@slider-margin: (@handle_height - @slider_size)/2 + 1;
+
 .@{noUi-css-prefix}-horizontal {
   width: 100%;
   height: @slider_size;
+
+  &.@{noUi-css-prefix}-target {
+    margin: @slider-margin 0px;
+  }
 }
 .@{noUi-css-prefix}-horizontal .@{noUi-css-prefix}-handle {
   width: @handle_width;
@@ -42,6 +48,10 @@
 .@{noUi-css-prefix}-vertical {
   width: @slider_size;
   height: 100%;
+
+  &.@{noUi-css-prefix}-target {
+    margin: 0px @slider-margin;
+  }
 }
 .@{noUi-css-prefix}-vertical .@{noUi-css-prefix}-handle {
   width: @handle_height;

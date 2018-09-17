@@ -9,6 +9,7 @@ in the browser,  or with python callbacks that execute on a Bokeh server.
 from __future__ import absolute_import
 
 from ...core.has_props import abstract
+from ...core.properties import Override
 
 from ..layouts import LayoutDOM
 
